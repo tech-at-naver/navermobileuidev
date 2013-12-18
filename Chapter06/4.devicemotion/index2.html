@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
-        <title>devicemotion 이벤트 활용 예제</title>
+        <title>devicemotion 이벤트 활용 예제 - Y축 기준 이동</title>
         <style>
             #elImg {
                 -webkit-transition: all 0.1s ease-out;
@@ -20,11 +20,9 @@
         <span id="posText"></span>
         <script>
             window.addEventListener("devicemotion", function(e) {
-                var nX = e.accelerationIncludingGravity.x;
                 var nY = -e.accelerationIncludingGravity.y;
-                var nZ = e.accelerationIncludingGravity.z;
-                document.getElementById("elImg").style.webkitTransform = "translate(" + nX * 10 + "px, " + nY * 10 + "px)scale(" + -nZ / 5 + ")";
-                // document.getElementById("posText").innerHTML = nX;
+                document.getElementById("elImg").style.webkitTransform = "translate(0px, " + nY * 10 + "px)";
+                document.getElementById("posText").innerHTML = nY;
             }, false);
         </script>
     </body>
