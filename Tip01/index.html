@@ -11,25 +11,25 @@
             }
         </style>
     </head>
-<body>
-    <div id="sizeinfo">
-        너비: <span id="nwidth"></span>
-        <br/>
-        높이: <span id="nheight"></span>
-    </div>
-    <script src="./mFullSize.js"></script>
-    <script>
-        var oFullSize = {};
-        function fCallback(htSize) {
-            document.getElementById("nwidth").innerHTML = htSize.width;
-            document.getElementById("nheight").innerHTML = htSize.height;
-            document.body.style.height = htSize.height + "px";
-        }
+    <body>
+        <div id="sizeinfo">
+            너비: <span id="nwidth"></span>
+            <br/>
+            높이: <span id="nheight"></span>
+        </div>
+        <script src="./mFullSize.js"></script>
+        <script>
+            var oFullSize = {};
+            function fCallback(htSize) {
+                document.getElementById("nwidth").innerHTML = htSize.width;
+                document.getElementById("nheight").innerHTML = htSize.height;
+                document.body.style.height = htSize.height + "px";
+            }
 
 
-        window.onload = function() {
-            oFullSize = new mFullSize(fCallback);
-        }
-    </script>
-</body>
+            window.onload = function() {
+                oFullSize = new mFullSize(fCallback);
+            }
+        </script>
+    </body>
 </html>
