@@ -1,8 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="ko">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
-        <title>터치 이벤트 예제</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+        <title>터치 이벤트 활용 예제</title>
         <style>
             div, span {
                 margin: 0px;
@@ -30,11 +31,11 @@
             elLog.innerHTML = sText;
         }
 
-        // 페이지 로드가 완료된 경우.
+        // 페이지 로딩이 완료된 경우.
         window.onload = function() {
             // touchstart 이벤트를 등록한다.
             elTouch.addEventListener("touchstart", function(event) {
-                //touchstart 이벤트의 기본 동작을 막는다. 이 영역에서는 브라우저 스크롤이 동작하지 않는다.
+                //touchstart 이벤트의 기본 동작을 막는다. 이 영역에서는 브라우저의 스크롤 기능이 동작하지 않는다.
                 event.preventDefault();
                 var oTouch = event.changedTouches;
                 var sTxt = '';
