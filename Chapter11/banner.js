@@ -74,9 +74,9 @@ window.mBanner = (function() {
         nLayerWidth += parseInt(_htWElement["element"].css('marginLeft'), 10) + parseInt(_htWElement["element"].css('marginRight'), 10) || 0;
         nLayerHeight += parseInt(_htWElement["element"].css('marginTop'), 10) + parseInt(_htWElement["element"].css('marginBottom'), 10) || 0;
 
-        // 배너를 가운데 보이게 하는 left 속성의 값을 구한다.
+        // 배너를 가운데 보이게 하는 left 속성값을 구한다.
         htElementPosition.nLeft = parseInt((nWidth - nLayerWidth) / 2, 10);
-        // top 또는 bottom 값을 상태에 구한다.
+        // 배너의 위치에 따라 top 속성값이나 bottom 속성값을 구한다.
         switch (sPosition) {
             case "top":
                 htElementPosition.nTop = 0;

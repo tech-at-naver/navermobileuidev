@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
-        <title>mFlicking</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+        <title>플리킹되는 콘텐츠 만들기</title>
         <style>
             #flickView {
                 overflow: hidden;
@@ -34,38 +34,35 @@
         </style>
     </head>
     <body>
-
         <div id="flickView">
             <div id="flickContainer" class="wkit-transition">
                 <div class="flick-panel panel-one">
                     <p>
-                        Panel 1
+                        패널 1
                         <br/>
-                        <a href="http://naver.com">naver</a>
+                        <a href="http://naver.com">네이버로 이동</a>
                     </p>
                 </div>
                 <div class="flick-panel panel-two">
                     <p>
-                        Panel 2
+                        패널 2
                         <br/>
-                        <a href="http://mail.naver.com">naver mail</a>
+                        <a href="http://mail.naver.com">네이버 메일로 이동</a>
                     </p>
                 </div>
                 <div class="flick-panel panel-three">
                     <p>
-                        Panel 3
+                        패널 3
                         <br/>
-                        <a href="http://cafe.naver.com">naver cafe</a>
+                        <a href="http://cafe.naver.com">네이버 카페로 이동</a>
                     </p>
                 </div>
             </div>
         </div>
         <script src="../js/jindo.mobile.all.js" charset="utf-8"></script>
         <script src="./mFlicking.js" charset="utf-8"></script>
-
         <script>
             var oFlicking = new mFlicking("flickView");
-
         </script>
     </body>
 </html>
