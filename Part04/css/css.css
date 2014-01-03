@@ -140,9 +140,9 @@ em, address {font-style: normal;}
 	.wrap:after {display: block;clear: both;content: '';}
 	.wrap_margin {margin-bottom: -1px;border-bottom: 1px solid #bdc7ce;}
 	
-
+*/
 	/*it 상식 */
-	.id_news .reco2 {top: 4px;}
+/*	.id_news .reco2 {top: 4px;}
 	.reco2 .tlst_w:not(.tlst_w_mz), .reco .tlst_w:not(.tlst_w_bk) {padding: 5px 8px 4px;}
 	.id_news .reco {padding-top: 118px;}
 }
